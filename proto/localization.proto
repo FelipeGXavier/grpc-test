@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+package localization;
+
 message Point {
     string latitude = 1;
     string longitude = 2;
