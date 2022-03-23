@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message Point {
+    string latitude = 1;
+    string longitude = 2;
+}
+
+service Localization {
+    rpc GetAddress(Point) returns (Address) {}
+}
+
+message Address {
+    string date = 1;
+    string address = 2;
+}
