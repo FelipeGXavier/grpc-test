@@ -2,6 +2,7 @@ const grpc = require('@grpc/grpc-js');
 const path = require('path');
 const process = require('process');
 const protoLoader = require('@grpc/proto-loader');
+
 const PROTO_PATH = path.resolve('./proto/localization.proto');
 const packageDefinition = protoLoader.loadSync(
     PROTO_PATH,
